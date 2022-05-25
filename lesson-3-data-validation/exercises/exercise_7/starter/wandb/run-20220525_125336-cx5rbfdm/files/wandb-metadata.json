@@ -1,0 +1,27 @@
+{
+    "os": "Linux-5.17.5-76051705-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-25T15:53:38.236483",
+    "startedAt": "2022-05-25T15:53:36.368091",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        "."
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "git@github.com:MateusCichelero/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "d2c3628dec072f4ea2c45fd742df573e5cf547a2"
+    },
+    "email": "mateus.silva@laura-br.com",
+    "root": "/data/Documents/cursos/nanodegree_ml_devops/nd0821-c2-build-model-workflow-exercises",
+    "host": "pop-os",
+    "username": "mateus",
+    "executable": "/home/mateus/miniconda3/envs/mlflow-b805658cf3343f6fc9e4dba60ed7b07d68ca2726/bin/python"
+}
