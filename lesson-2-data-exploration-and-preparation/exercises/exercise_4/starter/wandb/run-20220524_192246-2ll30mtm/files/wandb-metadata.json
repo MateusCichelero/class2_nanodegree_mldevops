@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.17.5-76051705-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-24T22:22:48.438792",
+    "startedAt": "2022-05-24T22:22:46.164569",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "artifact",
+        "put",
+        "--name",
+        "genres_mod.parquet",
+        "--type",
+        "raw_data",
+        "--description",
+        "A modified version of the songs dataset",
+        "genres_mod.parquet"
+    ],
+    "state": "running",
+    "program": "/home/mateus/miniconda3/envs/udacity/bin/wandb",
+    "git": {
+        "remote": "git@github.com:MateusCichelero/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "d2c3628dec072f4ea2c45fd742df573e5cf547a2"
+    },
+    "email": "mateus.silva@laura-br.com",
+    "root": "/data/Documents/cursos/nanodegree_ml_devops/nd0821-c2-build-model-workflow-exercises",
+    "host": "pop-os",
+    "username": "mateus",
+    "executable": "/home/mateus/miniconda3/envs/udacity/bin/python3.8"
+}

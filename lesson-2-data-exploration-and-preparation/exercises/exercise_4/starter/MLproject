@@ -1,0 +1,7 @@
+name: perform_eda
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: >-
+      jupyter notebook

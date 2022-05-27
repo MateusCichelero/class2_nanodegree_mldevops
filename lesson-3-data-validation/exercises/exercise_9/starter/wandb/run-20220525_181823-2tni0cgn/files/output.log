@@ -1,0 +1,39 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.13, pytest-6.2.2, py-1.11.0, pluggy-0.13.1 -- /home/mateus/miniconda3/envs/mlflow-c86639da1eecf5a556ffdc9bec299b5662e80681/bin/python
+cachedir: .pytest_cache
+rootdir: /data/Documents/cursos/nanodegree_ml_devops/nd0821-c2-build-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter
+collecting ... collected 1 item
+
+test_data.py::test_kolmogorov_smirnov FAILED
+
+=================================== FAILURES ===================================
+___________________________ test_kolmogorov_smirnov ____________________________
+
+data = (       Unnamed: 0  ...                                       text_feature
+0           27919  ...                     ...ll on to Forrest Trance 
+12592       34043  ...                            Lost Lands 2019 
+
+[12593 rows x 20 columns])
+ks_alpha = 0.9
+
+    def test_kolmogorov_smirnov(data, ks_alpha):
+    
+        sample1, sample2 = data
+    
+        columns = [
+            "danceability",
+            "energy",
+            "loudness",
+            "speechiness",
+            "acousticness",
+            "instrumentalness",
+            "liveness",
+            "valence",
+            "tempo",
+            "duration_ms"
+        ]
+    
+        # Bonferroni correction for multiple hypothesis testing
+        # (see my blog post on this topic to see where this comes from:
+        # https://towardsdatascience.com/precision-and-recall-trade-off-and-multiple-hypothesis-testing-family-wise-error-rate-vs-false-71a85057ca2b)
+        alpha_prime = 1 - (1 - ks_alpha)**(1 / len(columns))

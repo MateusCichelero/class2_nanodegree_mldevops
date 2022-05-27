@@ -1,0 +1,29 @@
+{
+    "os": "Linux-5.17.5-76051705-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-26T19:36:41.335903",
+    "startedAt": "2022-05-26T19:36:39.739124",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "exercise_6/data_train.csv:latest",
+        "--model_config",
+        "/data/Documents/cursos/nanodegree_ml_devops/nd0821-c2-build-model-workflow-exercises/lesson-4-training-validation-experiment-tracking/exercises/exercise_11/starter/multirun/2022-05-26/16-36-35/0/random_forest_config.yml"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "lesson-4-training-validation-experiment-tracking/exercises/exercise_11/starter/random_forest/run.py",
+    "git": {
+        "remote": "git@github.com:MateusCichelero/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "d6843e61629cba0d639251cfdb27d4cb68aef17f"
+    },
+    "email": "mateus.silva@laura-br.com",
+    "root": "/data/Documents/cursos/nanodegree_ml_devops/nd0821-c2-build-model-workflow-exercises",
+    "host": "pop-os",
+    "username": "mateus",
+    "executable": "/home/mateus/miniconda3/envs/mlflow-dbcbaa816e6f9957cfa4b70dff9ee8010f251acc/bin/python"
+}
